@@ -248,3 +248,15 @@
 # This allows efficient use of space and avoids shifting elements like in a regular array-based queue.
 }
 
+
+
+Questions to practice 
+
+Sort a string using stack
+Number of occurrence word in a string using hash table
+valid anagram using hash map
+valid parenthesis
+implement merge sort
+valid anagram using hashtable
+two sum in O n time
+3rd largest element from unsorted array
