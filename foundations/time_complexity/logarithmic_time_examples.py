@@ -3,6 +3,8 @@
 # It’s the opposite of O(n), where you go one-by-one.
 # Here, you cut the problem in half every time.
 
+# If a variable multiplies or divides each loop → O(log n)
+
 # 🔥 Real-Life Example:
 # You’re searching for a name in a phone book with 1000 pages.
 # Instead of reading page 1, 2, 3, … 1000 (O(n)),
