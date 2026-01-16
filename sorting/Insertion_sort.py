@@ -29,7 +29,6 @@ arr = [5, 3, 2, 1]
 print("Final Sorted Array:", insertion_sort(arr))
 
 
-
 def insertion_sort(arr):
     n = len(arr)
     for i in range(1,n):
