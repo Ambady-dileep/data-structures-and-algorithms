@@ -39,7 +39,7 @@ def insertion_sort(arr):
             j-=1
         arr[j+1]=key
     return arr
-    
+
 arr = [2,4,6,1,3]
 print(insertion_sort(arr))
 

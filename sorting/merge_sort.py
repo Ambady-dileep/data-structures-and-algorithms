@@ -51,8 +51,7 @@ def merge(left, right):
     return result
 
 arr = [5, 3, 8, 1, 2]
-sorted_arr = merge_sort(arr)
-print(sorted_arr)
+print(merge_sort(arr))
 
 # For understanding the code run below
 

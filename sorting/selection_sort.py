@@ -37,7 +37,6 @@ def selection_sort(arr):
 arr = [4, 2, 7, 1]
 print(selection_sort(arr))  # ✅ Output: [1, 2, 4, 7]
 
-
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -45,22 +44,8 @@ def selection_sort(arr):
         for j in range(i+1,n):
             if arr[j] < arr[min_index]:
                 min_index = j 
-        arr[i],arr[min_index] = arr[min_index],arr[i]
+        arr[min_index],arr[i] = arr[i],arr[min_index]
     return arr 
-
-arr = [4, 2, 7, 1]
-print(selection_sort(arr))
-
-def selection_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        min_index = i 
-        for j in range(i+1,n):
-            if arr[j]< arr[min_index]:
-                min_index = j 
-            arr[i],arr[min_index]= arr[min_index],arr[i]
-    return arr 
-    
 
 arr = [4, 2, 7, 1]
 print(selection_sort(arr))
