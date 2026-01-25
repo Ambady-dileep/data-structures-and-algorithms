@@ -37,25 +37,20 @@
 #             self.head = self.head.next
         
 #     def delete_at_position(self, pos):
-        
 #         if self.head is None:
 #             print("List is empty!!")
 #             return
 #         if pos == 0:
 #             self.head = self.head.next
 #             return
-
 #         current = self.head
 #         count = 0
-        
 #         while current and count < pos-1:
 #             current = current.next
 #             count+=1
-            
 #         if current is None or current.next is None:
 #             print("Position out of bounds!!")
 #             return
-        
 #         current.next = current.next.next
         
 #     def insert_by_position(self,pos,data):
@@ -67,46 +62,36 @@
 #             new_node.next = self.head
 #             self.head = new_node
 #             return
-        
 #         current = self.head
 #         count = 0
-        
 #         while current is not None and count < pos - 1:
 #             current = current.next
 #             count+=1
-            
 #         if current is None:
 #             print("Index out of bounds.\n")
 #             return
-        
 #         new_node.next = current.next
-#         current.next = new_node 
-        
+#         current.next = new_node           
 
 #     def delete_by_value(self,value):
 #         if self.head is None:
 #             print("No LinkedList found!!")
 #             return
-        
 #         if self.head.data == value:
 #             self.head = self.head.next
 #             return
-        
 #         current = self.head    
 #         while current.next and current.next.data != value:
 #             current = current.next
-            
 #         if current.next is None:
 #             print("Value not found")
 #             return
-        
 #         current.next = current.next.next
         
 #     def reverse(self):
 #         if self.head is None:
 #             print("No LinkedList found")
 #             return
-        
 #         current = self.head
 #         prev = None
 #         while current:
@@ -133,7 +118,7 @@
 #             current = current.next
 #             index+=1
 #         return f"Value {value} not found"
- 
+
 # ll = LinkedList()
 # ll.append(20)
 # ll.append(30)
@@ -154,9 +139,7 @@
 # print(ll.length())
 # print(ll.search_by_value(30))
 
-
 ###########################################################################################################################
-
 
 class Node:
     def __init__(self,data):
@@ -176,7 +159,6 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = new_node
-            
     
     def print(self):
         if self.head is None:
@@ -194,17 +176,14 @@ class LinkedList:
             new_node.next = self.head
             self.head = new_node
             return
-        
         current = self.head
         count = 0 
         while current and count < pos-1:
             current = current.next
             count+=1
-        
         if current is None:
             print("out of bound")
             return
-            
         new_node.next = current.next
         current.next = new_node
             
@@ -212,39 +191,31 @@ class LinkedList:
         if pos == 0:
             self.head = self.head.next
             return
-        
         current = self.head
         count = 0 
         while current and count < pos-1:
             current = current.next
             count+=1 
-        
         if current is None and current.next is None:
             print("Position out of bound")
             return
-        
         current.next = current.next.next
         
     def delete_by_value(self,value):
         if self.head is None:
             print("No linkedlist exists!")
             return
-        
         if self.head.data == value:
             self.head = self.head.next
             return  
-        
         current = self.head
         count = 0 
-        
         if current.next and current.next.data != value:
             current = current.next
             count+=1
-            
         if current.next is None:
             print("Value not found")
             return
-        
         current.next = current.next.next
     
     def insert_at_beginning(self,data):
@@ -316,18 +287,6 @@ ll.delete_at_end()
 ll.print()
 ll.reverse()
 ll.print()
-        
-
-
-
-
-
-
-
-
-
-
-
 
 
 
