@@ -18,7 +18,6 @@
 # So it never gets faster, even if your array is already sorted
 # Example: [1, 2, 3, 4, 5] still takes the same effort as [5, 4, 3, 2, 1]
 
-
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
